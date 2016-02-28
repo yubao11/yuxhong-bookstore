@@ -115,17 +115,24 @@ public class registerServlet extends HttpServlet {
                         if (pass.equals(passAgain)) {
                             // then the user is registered and a session is 
 
-                            String sql = "INSERT INTO  `saikiran enterprises`.`user` "
+                            String sql = "INSERT INTO  `bs`.`user` "
                                     + "(`user_id` ,`email` ,`pass` ,`registeredOn`) "
                                     + "VALUES (NULL ,  ?, SHA1(  ? ) , NOW( )); ";
+                            int i = 0;
 
-                            PreparedStatement psmt = c.prepareStatement(sql);
+                            try {
+                                PreparedStatement psmt = c.prepareStatement(sql);
 
-                            psmt.setString(1, email);
+                                psmt.setString(1, email);
 
-                            psmt.setString(2, pass);
+                                psmt.setString(2, pass);
 
-                            int i = psmt.executeUpdate();
+                                i = psmt.executeUpdate();
+                            } catch (Exception e) {
+                                System.out.println("当前插入数据库出错:");
+                                e.printStackTrace();
+                            }
+
 
                             if (i == 1) {
                                 isRegistered = true;
@@ -174,15 +181,14 @@ public class registerServlet extends HttpServlet {
                 dispatchMessage.forward(request, response);
             }
 
-            //try ends here
-        } catch (SQLIntegrityConstraintViolationException ex) {
-            // user exsts but wrong passwotd ask to CHANGE THE PASSWORD
-            messageDetail = ex.getMessage();
-            message = "You have been registered earlier please try your right password again, else change your password...";
-            out.print(" nOT Success!!" + ex);
-            request.setAttribute("message", message);
-            request.setAttribute("messageDetail", messageDetail);
-            dispatchMessage.forward(request, response);
+            try {
+
+            } finally {
+                if (c != null) {
+                    c.close();
+                }
+            }
+
         } catch (Exception ex) {
             messageDetail = ex.getMessage();
             message = "There was a problem in registering your account please do retry again later...";

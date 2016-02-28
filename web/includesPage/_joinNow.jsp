@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <script type ="text/javascript" src="js/headerJoinScript.js"></script>
 <div id = "topWrapper">
     <div class="container_16">
@@ -6,7 +7,7 @@
             </div>
             <div class="grid_6" id="top">
                 <ul>
-                    <a href="#" id="join"><li id="greenBtn"  class ="Btn showForm">Join Now!!</li></a>
+                    <a href="#" id="join"><li id="greenBtn"  class ="Btn showForm">加入我们!!</li></a>
                 </ul>
             </div>
         </div>
@@ -22,7 +23,7 @@
                     <table>
                         <tr>
                             <td colspan="2">
-                                <strong><h1 style="font-wieght:bold; text-align:left; padding:20px 0px; color:#FFF;">Login...</h1></strong>
+                                <strong><h1 style="font-wieght:bold; text-align:left; padding:20px 0px; color:#FFF;">登录...</h1></strong>
                             </td>
                             <td>
                             </td>
