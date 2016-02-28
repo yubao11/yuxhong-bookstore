@@ -9,6 +9,7 @@
         <%@page import="database.DB_Conn"%>
         <%@page import="java.sql.Connection"%>
         <%@page import="java.util.ArrayList"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 
         <style type="text/css">
             .prodGrid {
@@ -21,7 +22,7 @@
                        <a href="viewProducts_.jsp">
                            <div class="ProductHeading">
                                <div class="grid_16">
-                                   <h2 class="heading">Top Most Viewed Products Currently</h2>
+                                   <h2 class="heading">您最近查看的商品和相关推荐</h2>
                                </div>
                                <!--<div id="viewMore" class="grid_3">
                                    <h6 class="blue">View More</h6>

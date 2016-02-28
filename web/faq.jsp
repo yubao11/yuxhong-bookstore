@@ -1,10 +1,3 @@
-<%-- 
-    Document   : faq
-    Created on : 18 Dec, 2012, 9:22:01 AM
-    Author     : chirag
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>

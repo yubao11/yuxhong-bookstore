@@ -2,7 +2,7 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="database.DB_Conn"%>
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%@page language="java" contentType="text/html; charset=UTF-8"    pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -174,7 +174,7 @@
             <div id="leftside" class="grid_3">
                 <div>
                     <ul id="leftsideNav">
-                        <li><a href="#"><strong>Categories</strong></a></li>
+                        <li><a href="#"><strong>分类</strong></a></li>
                         
                         <%
                         while (rs.next()){

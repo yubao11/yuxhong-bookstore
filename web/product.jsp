@@ -1,6 +1,7 @@
 
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.sql.*, database.*" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 
 <!DOCTYPE HTML>
 <html>
@@ -88,7 +89,7 @@
                 <div class="grid_10">
                     <div class="grid_10">
                         <br/>
-                        <h5>Category :<a href="#"><span class="blue"><%= category_name%></span></a> > <a href="#"><span class="blue"><%= sub_category_name%></span></a></h5>
+                        <h5>分类 :<a href="#"><span class="blue"><%= category_name%></span></a> > <a href="#"><span class="blue"><%= sub_category_name%></span></a></h5>
                         <div class="clear"></div>
                         <br/>
                         <h5>Priced At <span class="BigRed">Rs. <%= price%></span></h5>
@@ -109,7 +110,7 @@
 
                         <a href="addToCart.jsp?id=<%= product_id %>">
                             <div class="grid_3" id="buy">
-                                Buy This Product Now
+                                立即购买
                             </div>
                         </a>
                            
@@ -120,7 +121,7 @@
                             <%= summary%>
 
 
-                        <h1>Brief Description</h1>
+                        <h1>基本信息</h1>
                         <br/>
                         <table class="grid_6" id="descripTable">
                             <tr class="grid_6">

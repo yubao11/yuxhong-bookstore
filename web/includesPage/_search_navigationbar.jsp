@@ -1,5 +1,4 @@
-
-
+<%@page language="java" contentType="text/html; charset=UTF-8"    pageEncoding="UTF-8"%>
 <div id = "topSearch">
     <div class="container_16">
         <div class="grid_16">
@@ -11,10 +10,10 @@
             </div>
             <div class="grid_6" id="topNav">
                 <ul>
-                    <li><a href="index.jsp">HOME</a></li>
-                    <li><a href="viewProducts_.jsp">PRODUCTS</a></li>
-                    <li><a href="contact-support.jsp">CONTACT</a></li>
-                    <li><a href="faq.jsp">FAQ</a></li>
+                    <li><a href="index.jsp">首页</a></li>
+                    <li><a href="viewProducts_.jsp">商品</a></li>
+                    <li><a href="contact-support.jsp">联系我</a></li>
+                    <li><a href="faq.jsp">常见问题</a></li>
                 </ul>
             </div>
         </div>
