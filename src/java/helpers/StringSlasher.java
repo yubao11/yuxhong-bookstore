@@ -9,6 +9,12 @@ package helpers;
  * @author Chirag
  */
 public class StringSlasher {
+    public static void main(String args[]){
+        StringSlasher slash = new StringSlasher();
+        String sql = "Hi Chir'ag ";
+        slash.sqlSlasher(sql);
+    }
+    
     public void sqlSlasher (String sql){
         char arr [] = sql.toCharArray();
         String strarr [] = sql.split(" ");
@@ -23,16 +29,10 @@ public class StringSlasher {
             }
             System.out.print("");
         }*/
-        
+
         for (int i = 0 ; i< strarr.length ; i++){
             System.out.print(""+strarr[i]);
         }
-    }
-    
-    public static void main(String args[]){
-        StringSlasher slash = new StringSlasher();
-        String sql = "Hi Chir'ag ";
-        slash.sqlSlasher(sql);
     }
     
 }

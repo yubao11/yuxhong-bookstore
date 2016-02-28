@@ -18,12 +18,13 @@ import java.util.ArrayList;
 public class administrator {
     Connection c;
     String admin_email = null;
+    ArrayList <String> listsOfAdmin = new ArrayList<String>();
 
     public ArrayList<String> getListsOfAdmin() throws SQLException, ClassNotFoundException {
         c = new DB_Conn().getConnection();
         String getAdministratorsEmail = " SELECT * "
                         +" FROM  `user` ";
-        
+
         Statement st = c.createStatement();
         ResultSet executeQuery = st.executeQuery(getAdministratorsEmail);
         listsOfAdmin.clear();
@@ -32,7 +33,7 @@ public class administrator {
         }
         return listsOfAdmin;
     }
-    ArrayList <String> listsOfAdmin = new ArrayList<String>();
+
     public String getAdmin_email() {
         return admin_email;
     }

@@ -10,6 +10,15 @@ package product;
  */
 public class productBean {
 
+    private String company;
+    private String category;
+    private String subcategory;
+    private String name;
+    private String price;
+    private String quantity;
+    private String tags;
+    private String summary;
+
     public String getCompany() {
         return company;
     }
@@ -33,7 +42,7 @@ public class productBean {
     public void setSubcategory(String subcategory) {
         this.subcategory = subcategory;
     }
-
+    
     public String getName() {
         return name;
     }
@@ -58,7 +67,6 @@ public class productBean {
         this.quantity = quantity;
     }
 
-    
     public String getTags() {
         return tags;
     }
@@ -66,7 +74,7 @@ public class productBean {
     public void setTags(String tags) {
         this.tags = tags;
     }
-    
+
     public String getSummary() {
         return summary;
     }
@@ -74,12 +82,4 @@ public class productBean {
     public void setSummary(String summary) {
         this.summary = summary;
     }
-    private String company;
-    private String category;
-    private String subcategory;
-    private String name;
-    private String price;
-    private String quantity;
-    private String tags;
-    private String summary;
 }
