@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>SaiKiran BookStores - Cart</title>
+        <title>网上书城</title>
         <!-- Default Stylesheets -->
         <link rel="shortcut icon" href="images/logo/ico.ico"/>
 
@@ -57,9 +57,11 @@
 
         <%
             if (session.getAttribute("user") == null) {// THen new user, show join now
-%>
+        %>
+
         <jsp:include page="includesPage/_joinNow.jsp"></jsp:include>
         <%        } else {
+
         %>
         <jsp:include page="includesPage/_logout.jsp"></jsp:include>
         <%            }
