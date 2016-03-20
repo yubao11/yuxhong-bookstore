@@ -1,10 +1,11 @@
-<%-- 
+<%@page language="java" contentType="text/html"    pageEncoding="UTF-8"%>
+<%--
     Document   : contact-support
     Created on : 14 Dec, 2012, 12:38:53 AM
     Author     : chirag
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -93,7 +94,7 @@
         <div class="container_16">
             <div id="whiteBox" style="padding: 10px;">
                 <br/>
-                <h1>Contact Us</h1>
+                <h1>联系我们</h1>
                 <hr/>
             </div>
         </div>
@@ -111,22 +112,22 @@
                     <div class="clear ">
                     </div>
                     <div class="grid_1">
-                        Email:
+                       邮箱:
                     </div>
                     <div class="grid_3">
-                        support@sai_books.com
+                        yuxuhong11@163.com
                     </div>
                     <div class="grid_1">
-                        Address:
+                        地址:
                     </div>
                     <div class="grid_3">
-                        B-3/Shop No 18, Silver Park, Mira Bhyendar Road, Mira Road East
+                        浙江省杭州市西湖区文三路140号浙江外国语学院
                     </div>
                     <div class="grid_1">
-                        Mobile:
+                        电话:
                     </div>
                     <div class="grid_3">
-                        +91-9004300630
+                        0571——80088808
                     </div>
                 </div>
             </div>

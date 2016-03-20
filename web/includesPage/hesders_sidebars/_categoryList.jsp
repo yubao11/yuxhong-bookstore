@@ -1,4 +1,5 @@
-<%-- 
+<%@page language="java" contentType="text/html"    pageEncoding="UTF-8"%>
+<%--
     Document   : _categoryList
     Created on : 15 Nov, 2012, 11:26:20 PM
     Author     : chirag
