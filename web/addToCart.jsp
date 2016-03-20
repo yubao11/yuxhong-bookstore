@@ -57,16 +57,14 @@
 
         <%
             if (session.getAttribute("user") == null) {// THen new user, show join now
-        %>
-
+%>
         <jsp:include page="includesPage/_joinNow.jsp"></jsp:include>
         <%        } else {
-
         %>
         <jsp:include page="includesPage/_logout.jsp"></jsp:include>
         <%            }
         %>
-        
+
         <%@include file="includesPage/_search_navigationbar.jsp" %>
 
         <%@include file="includesPage/_facebookJoin.jsp" %>
@@ -77,10 +75,6 @@
                     <h1 class="push_2" style="padding:10px 00px">Products In your Cart</h1>
 
                     <%
-                        user User = new user();
-                        session.getAttribute("user");
-                        //out.println(session.getAttribute("user"));
-                        User = (user) session.getAttribute("user");
                         if (session.getAttribute("user") == null) {
                     %>
                     <h3 class="showForm" id="loginBtn" style="padding:10px 00px">Please Login before buying...</h3>
@@ -123,7 +117,7 @@
 
                     <div id="CartTable" style="padding:10px 00px" class="grid_11">
                         <div class="grid_5">
-                            <h2>Name Of Product</h2> 
+                            <h2>Name Of Product</h2>
                         </div>
                         <div class="grid_2">
                             <h2>Price</h2>
@@ -182,8 +176,8 @@
 
                     <br/>
                     <br/>
-                    
-                    
+
+
                     <br/>
                     <%
                             }

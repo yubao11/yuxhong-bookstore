@@ -1,9 +1,10 @@
+<%@page language="java" contentType="text/html"    pageEncoding="UTF-8"%>
 <div id = "footer">
     <div class="container_16">
         <div class="grid_16" >
             <div class="grid_3">
                 <ul>
-                    <li><strong>Help</strong></li>
+                    <li><strong>帮助</strong></li>
                     <li><a href="faq.jsp">payments</a></li>
                     <li><a href="faq.jsp">shipping</a></li>
                     <li><a href="faq.jsp">cancellation &amp; return</a></li>
