@@ -60,7 +60,7 @@
                     <table>
                         <tr>
                             <td colspan="2">
-                                <strong><h1 style="font-wieght:bold; text-align:right; padding:20px 0px; color:#FFF;">Register Now!!</h1></strong>
+                                <strong><h1 style="font-wieght:bold; text-align:right; padding:20px 0px; color:#FFF;">即刻申请!!</h1></strong>
                             </td>
                             <td>
 

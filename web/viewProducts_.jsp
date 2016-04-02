@@ -85,7 +85,7 @@
                             %>
                             <div>
                                 <ul id="leftsideNav">
-                                    <li><a href="#"><strong>Categories</strong></a></li>
+                                    <li><a href="#"><strong>分类</strong></a></li>
                             <%
                             for (int i =0; i< Cat.size(); i++){
                                 %>
@@ -110,7 +110,7 @@
                 <div class="grid_13" id="whiteBox">
                     <div class="ProductHeading">
                         <div class="grid_12">
-                                <h2 class="heading">Products >
+                                <h2 class="heading">产品 >
                                     <%= category %> 
                                     <%= subcategory %>
                                 </h2>
@@ -131,7 +131,7 @@ GROUP BY  `product-name` */
                                 sql.append(" WHERE  `category-name` =  '"+category+"' ");
                                 %>
                                     <div class="grid_4 ">
-                                        <a id="greenBtn" href="removeProductFilter.jsp?cat=<%= category %>">Category : <%= category %> [x]</a>
+                                        <a id="greenBtn" href="removeProductFilter.jsp?cat=<%= category %>">目录 : <%= category %> [x]</a>
                                     </div>
                                 <%
                                 
@@ -143,7 +143,7 @@ GROUP BY  `product-name` */
                                             sql.append(" AND  `sub-category-name` =  '"+subcategory+"' ");
                                             %>
                                                 <div class="grid_4 ">
-                                                    <a id="greenBtn" href="removeProductFilter.jsp?scat=<%= subcategory %>">Sub-Category : <%= subcategory %> [x]</a>
+                                                    <a id="greenBtn" href="removeProductFilter.jsp?scat=<%= subcategory %>">子目录 : <%= subcategory %> [x]</a>
                                                 </div>
                                             <%
                                         }
@@ -224,7 +224,7 @@ product-name	product_id	sub-category-name	category-name	company-name	price	summa
                                 <p id="info"><a href="product.jsp?id=<%=product_id%>"><h3><span class="blue"> <%=product_name %></span></h3></a>By <%= company_name+" "+ category_name %><br/><span class="red">Rs. <%= price %></span></p>
                             </div>
                             <div class="grid_3 push_2">
-                                <p><%=sub_category_name %>  <a href="addToCart.jsp?id=<%= product_id %>" id="greenBtn">Add to cart</a></p><p>Will Be delivered in 3 Working days</p>
+                                <p><%=sub_category_name %>  <a href="addToCart.jsp?id=<%= product_id %>" id="greenBtn">加入购物车</a></p><p>将在3个工作日内送达</p>
                             </div>
                         </div>
                         <div class="clear"></div>

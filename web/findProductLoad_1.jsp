@@ -16,6 +16,7 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="database.DB_Conn"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <%
             String sqlSearch = "";
             if (request.getParameter("searchbar") != null){
@@ -103,7 +104,7 @@ product-name	product_id	sub-category-name	category-name	company-name	price	summa
                                 <p id="info"><a href="product.jsp?id=<%=product_id%>"><h3><span class="blue"> <%=product_name %></span></h3></a>By <%= company_name+" "+ category_name %><br/><span class="red">Rs. <%= price %></span></p>
                             </div>
                             <div class="grid_3">
-                                <p><%=sub_category_name %>  <a href="addToCart.jsp?id=<%= product_id %>" id="greenBtn">Add to cart</a></p><p>Will Be delivered in 3 Working days</p>
+                                <p><%=sub_category_name %>  <a href="addToCart.jsp?id=<%= product_id %>" id="greenBtn">加入购物车</a></p><p>将在3个工作日内送达</p>
                             </div>
                         </div>
                         <div class="clear"></div>

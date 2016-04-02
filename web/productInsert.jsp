@@ -1,4 +1,5 @@
 <%@page import="database.DB_Conn"%>
+<%@page language="java" contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE HTML>
 
 <%@page import="java.sql.*, database.*" %>
@@ -222,6 +223,7 @@
 
             <div class="clear"></div>
         </div>
+
     </div>
 </div>
 
@@ -229,7 +231,7 @@
     <div class="grid_16" id="productStrip"> <a href="http:google.com">
             <div class="ProductHeading">
                 <div class="grid_12">
-                    <h2 class="heading">Top Most Viewed Products Currently</h2>
+                    <h2 class="heading">按当前浏览次数排序</h2>
                 </div>
                 <div id="viewMore" class="grid_3">
                     <h6 class="blue">View More</h6>

@@ -14,7 +14,7 @@
     %>
                     <div>
                         <ul id="leftsideNav">
-                            <li><a href="#"><strong>Categories</strong></a></li>   
+                            <li><a href="#"><strong>分类</strong></a></li>
     <%
     for (int i=0;i<category.size(); i++){
         %>         
@@ -31,7 +31,7 @@
                     
                     <div>
                         <ul id="leftsideNav">
-                            <li><a href="#"><strong>Categories</strong></a></li>
+                            <li><a href="#"><strong>分类</strong></a></li>
                             <li><a href="#">Books</a></li>
                             <li><a href="#">Calculators</a></li>
                             <li><a href="#">Art Supplies</a></li>

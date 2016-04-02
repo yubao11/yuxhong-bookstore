@@ -1,4 +1,5 @@
-<%-- 
+<%@page language="java" contentType="text/html" pageEncoding="UTF-8" %>
+<%--
     Document   : topMostViewedProducts
     Created on : 13 Dec, 2012, 6:45:53 PM
     Author     : chirag
@@ -21,7 +22,7 @@
                        <a href="viewProducts_.jsp">
                            <div class="ProductHeading">
                                <div class="grid_12">
-                                   <h2 class="heading">Top Most Viewed Products Currently</h2>
+                                   <h2 class="heading">按当前浏览次数排序</h2>
                                </div>
                                <!--<div id="viewMore" class="grid_3">
                                    <h6 class="blue">View More</h6>

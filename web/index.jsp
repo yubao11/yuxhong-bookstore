@@ -64,9 +64,9 @@
 
                         <span class="top" style="display: none; ">
 
-                            <strong>Fountain Pens...</strong>	
+                            <strong>Fountain Pens...</strong>
 
-                            <br>From the International and Indian markets, we have the variety of the High Class fountain 
+                            <br>From the International and Indian markets, we have the variety of the High Class fountain
 
                             pens. Available now for you to get your hands on.
 
