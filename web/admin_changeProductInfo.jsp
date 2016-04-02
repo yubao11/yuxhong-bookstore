@@ -8,7 +8,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>SaiKiran BookStores</title>
+        <title>Yubao BookStores</title>
         <jsp:useBean class="product.product" id="product" scope="session"></jsp:useBean>
 
         <%@page import="java.sql.*, database.*" %>
@@ -77,7 +77,7 @@ UPDATE  `products` SET  `product-name` =  'XPS Seriator v2',
  `lastUpdated` = NOW( ) ,
  `summary` =  'qwert yuio p' WHERE  `products`.`product_id` =10
                         
-  INSERT INTO  `saikiran enterprises`.`expenses` (
+  INSERT INTO  `Yubao enterprises`.`expenses` (
  `expenses_id` ,
     `product_id` ,
     `product_name` ,
@@ -99,7 +99,7 @@ UPDATE  `products` SET  `product-name` =  'XPS Seriator v2',
                         +" `summary` =  '"+summary+"' WHERE  `products`.`product_id` ="+pid+" ";
                         double expenses_d = productPrice * addQuantity;
                         int expenses = (int)expenses_d;
-                        String sqlUpdateExpenses = "INSERT INTO  `saikiran enterprises`.`expenses` ("
+                        String sqlUpdateExpenses = "INSERT INTO  `Yubao enterprises`.`expenses` ("
 +"  `expenses_id` , "
  +"   `product_id` ,"
  +"   `product_name` , "

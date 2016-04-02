@@ -58,7 +58,7 @@
 
         <%
             /*
-        INSERT INTO  `saikiran enterprises`.`products` (
+        INSERT INTO  `Yubao enterprises`.`products` (
 `product_id` ,
 `product-name` ,
 `sub-category-name` ,
@@ -80,7 +80,7 @@ FROM  `products`
 WHERE  `product-name` =  'Assassins Creed'
  
       //Insert into expenses
- INSERT INTO  `saikiran enterprises`.`expenses` (
+ INSERT INTO  `Yubao enterprises`.`expenses` (
 `expenses_id` ,
 `product_id` ,
 `product_name` ,
@@ -93,7 +93,7 @@ NULL ,  '2',  'Ayinga Movie ',  '123456', NOW( )
         */
                 String insertQuery = ""
                         + "INSERT INTO  "
-                        + "`saikiran enterprises`.`products` "
+                        + "`Yubao enterprises`.`products` "
                         + "(`product_id` ,"
                         + "`product-name` ,"
                         + "`sub-category-name` ,"
@@ -144,7 +144,7 @@ NULL ,  '2',  'Ayinga Movie ',  '123456', NOW( )
                      pid = executeQueryFetchPid.getInt("product_id");
                  }
                 
-                st.executeUpdate(" INSERT INTO  `saikiran enterprises`.`expenses` ("
+                st.executeUpdate(" INSERT INTO  `Yubao enterprises`.`expenses` ("
                             +"`expenses_id` ,"
                             +"`product_id` ,"
                             +"`product_name` ,"

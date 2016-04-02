@@ -6,7 +6,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>SaiKiran BookStores</title>
+        <title>Yubao BookStores</title>
         <jsp:useBean class="product.product" id="product" scope="session"></jsp:useBean>
 
         <%@page import="java.sql.*, database.*" %>
@@ -44,39 +44,7 @@
 
         <div class="container_16">
             <div id = "contents">
-                <!-- LeftSide -->
-                <%
-                    /*
-                *       FILTERING OF PRODUCTS AS OF FOLLOWS
- * 1) Retrieve Category 
- *      if Category set 
- *      Show 
- *          SubCategory
- *          Company
- *          Pricing
- *              SQL select * from products WHERE category = 'cat';
- *      2) Retrieve Sub Category 
-                if SubCategory is set
- *                  Shw
-    *                  Company  
-    *                  Pricing
- *                  SQL select * from products WHERE subcategory = 'scat';
-            *     else  Show 
-            *          SubCategory
-            *          Company
-            *          Pricing
- *      else 
- *          Show
- *          Category 
- *          Pricing
- *              SQL select * from products;
- * 
- * Accordingly set the SQL Statement 
-                */
-                %>
-                
                 <div id="leftside" class="grid_3">
-                    
                     <%
                         String category, subcategory;
                         StringBuffer sql = new StringBuffer();
@@ -88,25 +56,28 @@
                         subcategory = "";
                         if(session.getAttribute("cat") != null ){
                             category = (String) session.getAttribute("cat");
-                            ArrayList subCat = product.getSubcategory(category);
-                                
+                            ArrayList<String> subCat = product.getSubcategory(category);
                             %>
                             <div>
                                 <ul id="leftsideNav">
-                                    <li><a href="#"><strong>Sub-Categories</strong></a></li>
+                                    <li><a href="#"><strong>子菜单</strong></a></li>
                             <%
                             for (int i =0; i< subCat.size(); i++){
                                 %>
-                                <li><a href="addProductFilters.jsp?scat=<%= subCat.get(i) %>"><%= subCat.get(i) %></a></li>      
+                                <li><a href="addProductFilters.jsp?scat=<%= subCat.get(i) %>"><%= subCat.get(i) %></a></li>
                                 <%
-                            } subCat.clear(); %>
+                            }
+                                    try{}finally {
+                                        subCat.clear();
+                                        subCat=null;
+                                    } %>
                                 </ul>
                             </div>
-                       
+
                              <%
                             if (session.getAttribute("scat") != null){
                                 subcategory = (String) session.getAttribute("scat");
-                                
+
                             }
                         } else {
                             //Show Category
@@ -127,42 +98,6 @@
                             <%
                         }
                     %>
-                    <!--
-                    <div>
-                        <ul id="leftsideNav">
-                            <li><a href="#"><strong>Categories</strong></a></li>
-                            <li><a href="#">Books</a></li>
-                            <li><a href="#">Calculators</a></li>
-                            <li><a href="#">Art Supplies</a></li>
-                            <li><a href="#">Office Supplies</a></li>
-                            <li><a href="#">School Supplies</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Movies</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <ul id="leftsideNav">
-                            <li><a href="#"><strong>Sub-Categories</strong></a></li>
-                            <li><a href="#">Books</a></li>
-                            <li><a href="#">Calculators</a></li>
-                            <li><a href="#">Art Supplies</a></li>
-                            <li><a href="#">Office Supplies</a></li>
-                            <li><a href="#">School Supplies</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Movies</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <ul id="leftsideNav">
-                            <li><a href="#"><strong>Pricing</strong></a></li>
-                            <li><a href="#">Low to High</a></li>
-                            <li><a href="#">High to Low</a></li>
-                        </ul>
-                    </div>
-                    -->
-                    
                     <div class="adv">
                         <h2><br/>广告投放区</h2>
                         <p><p>提供广告投放，若有意向合作，请与我们联系</p>                     <p>0571-88088888</p>                     <p>yuxuhong11@163.com</p>  </p>

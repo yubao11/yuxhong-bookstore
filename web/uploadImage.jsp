@@ -29,7 +29,7 @@
         <%
             if ((session.getAttribute("productName") == null)) {
                 // if email session is set, Dont show the message redirect to index
-                //response.sendRedirect("/saikiranBookstoreApp/productInsertImages_2.jsp");
+                //response.sendRedirect("/YubaoBookstoreApp/productInsertImages_2.jsp");
                 //out.println("There are No product selected to insert an image for them...");
             }
         %>z
@@ -65,7 +65,7 @@
                                     result = "File Uploaded with no errors...";
                                     DB_Conn conn = new DB_Conn();
                                     Connection con = conn.getConnection();
-                                    String insertImage = "INSERT INTO  `saikiran enterprises`.`images` "
+                                    String insertImage = "INSERT INTO  `Yubao enterprises`.`images` "
                                             + "(`image-id` ,`image-name` ,`product-name`) "
                                             + "VALUES (NULL ,  "
                                             + "'uploads/" + file.getFileName() + "',  '" + (String)session.getAttribute("productName") + "');";

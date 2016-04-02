@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>SaiKiran BookStores</title>
+        <title>Yubao BookStores</title>
         <jsp:useBean class="product.product" id="product" scope="session"></jsp:useBean>
 
         <%@page import="java.sql.*, database.*" %>
@@ -107,7 +107,7 @@
                 <div class="grid_5">
                     
                     <div class="grid_3 ">
-                        Saikiran BookStores
+                        Yubao BookStores
                     </div>
                     <div class="clear ">
                     </div>

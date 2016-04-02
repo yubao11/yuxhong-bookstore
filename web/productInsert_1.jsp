@@ -13,7 +13,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>SaiKiran BookStores</title>
+        <title>Yubao BookStores</title>
         <link rel="shortcut icon" href="images/logo/ico.ico"/>
 
         <%@include file="includesPage/_stylesheets.jsp" %>
@@ -287,7 +287,7 @@
             </div>
             <div class="grid_3">
                 <ul>
-                    <li><strong>SaiKiran</strong></li>
+                    <li><strong>Yubao</strong></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="faq.html">Careers</a></li>
@@ -312,7 +312,7 @@
 
         <div id="clear"/>
         <div class="grid_16">	
-            <p>Copyrights &copy; 2012 SaiKiran BookStores - The online library</p>
+            <p>Copyrights &copy; 2012 Yubao BookStores - The online library</p>
         </div>
     </div>
 </div>

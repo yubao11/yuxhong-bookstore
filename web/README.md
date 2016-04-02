@@ -1,4 +1,4 @@
-# Saikiran Bookstores App
+# Yubao Bookstores App
 ##### An Online Retail Management and Custommer Order Processing System
 ##### -By Chirag Pandit https://www.facebook.com/chirag.pandit07
 
@@ -19,7 +19,7 @@ http://www.4shared.com/office/AEf2a-PW/Binder2.html
 	* Top sold products
 	* The monthly sales revenue and purchases being made by the store
 	
-### Guide to installing saikiranBookStoreApp into your machine
+### Guide to installing YubaoBookStoreApp into your machine
 Prerequisites - Must be having on the client computer before installation
 
 * A copy of JDK/JRE + Netbeans 7.x +

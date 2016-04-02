@@ -8,7 +8,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>SaiKiran BookStores</title>
+        <title>Yubao BookStores</title>
         <jsp:useBean class="product.product" id="product" scope="session"></jsp:useBean>
 
         <%@page import="java.sql.*, database.*" %>
@@ -88,7 +88,7 @@
              <div id="" class="grid_5 push_1" style="font-size: 17px; padding: 15px;">
                  <a href="index.jsp">
                      <img style="margin-left: 33px" src="images/logo/icon.png" />
-                     SaiKiran BookStores
+                     Yubao BookStores
                  </a>
              </div>
              <div class="grid_8">
@@ -193,7 +193,7 @@
                         From;
                     </div>
                     <div class="grid_3">
-                        Saikiran BookStores
+                        Yubao BookStores
                     </div>
                     <div class="grid_1">
                         Email:

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>SaiKiran BookStores</title>
+        <title>Yubao BookStores</title>
         <link rel="shortcut icon" href="images/logo/ico.ico"/>
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
         <link rel="stylesheet" type="text/css" href="css/text.css"/>
@@ -77,7 +77,7 @@
                         <%
                             if ((session.getAttribute("productName") == null)) {
                                 // if email session is set, Dont show the message redirect to index
-                                //response.sendRedirect("/saikiranBookstoreApp/index.jsp");
+                                //response.sendRedirect("/YubaoBookstoreApp/index.jsp");
                                 out.println("There is no product detected to insert an image for it...");
                             }else {
                         %>
