@@ -12,7 +12,7 @@
             </div>
             <div class="grid_3">
                 <ul>
-                    <li><strong>SaiKiran</strong></li>
+                    <li><strong>Yubao</strong></li>
                     <li><a href="contact-support.jsp">联系我们</a></li>
                     <li><a href="contact-support.jsp">关于我们</a></li>
                     <li><a href="faq.jsp">事业</a></li>
@@ -27,13 +27,13 @@
                 </ul>
             </div>
             <div class="grid_5">
-                <br/><h2>Safe and Secure Shopping</h2><p>
-                    All the payments will be made through Cash on delivery, No need to take care of payment methods because you pay when you get your product delivered at your doorstep.</p>
+                <br/><h2>安全消费保障</h2><p>
+                    我们只存在货到付款的支付方式, 你只需要当货品上门时支付货款而不再担心网络会偷走你的钱包了.</p>
             </div>
         </div>
         <div id="clear"></div>
         <div class="grid_16">	
-            <p>Copyrights &copy; 2012 SaiKiran BookStores - The Online Megastore</p>
+            <p></p>
     </div>
 </div>
 </div>

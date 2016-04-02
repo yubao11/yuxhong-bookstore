@@ -47,7 +47,7 @@ public class SecureSHA1 {
     
     public static void main(String args[]){
         try {
-            String s = "123";
+            String s = "qwertyuiop";
             String sha1S = getSHA1(s);
             System.out.print("SHA1 hash for "+ s+ " is "+ sha1S);
         } catch (Exception e) {

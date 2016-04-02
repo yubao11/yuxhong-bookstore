@@ -188,8 +188,10 @@
                     </ul>
                 </div>
                 <div class="adv">
-                    <h2><br/>This is The Header of an Advertisement</h2>
-                    <p>We offer Advertisement display here </p>
+                    <h2><br/>广告投放区</h2>
+                    <p>提供广告投放，若有意向合作，请与我们联系</p>
+                    <p>0571-88088888</p>
+                    <p>yuxuhong11@163.com</p>
                 </div>
             </div>
 
