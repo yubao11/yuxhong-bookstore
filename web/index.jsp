@@ -177,7 +177,8 @@
                         while (rs.next()) {
                             String category = rs.getString("category_name");
                     %>
-                    <li><a href="viewProducts_.jsp"><%= category %>
+                    <li><a href="addProductFilters.jsp?cat=<%= category %>">
+                        <%= category%>
                     </a></li>
                     <%
                         }
