@@ -70,9 +70,14 @@ public class _logoutServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
-        HttpSession session = request.getSession();
-        session.invalidate();
-        response.sendRedirect(request.getContextPath());
+        try {
+            HttpSession session = request.getSession();
+            session.invalidate();
+            //退出后跳到首页
+            response.sendRedirect("/");
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     /**
