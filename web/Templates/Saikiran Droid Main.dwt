@@ -116,7 +116,8 @@
                         	 <p><span>Yubao</span>是最适合你的<span>书店</span>。 在此，你的任何购物<span>想法</span> 都能够得到满足。若想了解更多信息，请联系我们 : +0571-80888888</p>
                         </div>
                         <div class="grid_6" id="top">
-                               <a href="http://www.facebook.com"> <div id="greenBtn" align="center" class ="Btn">通过facebook加入我们!!</div></a>
+                                        <a href="http://weibo.com"> <div id="greenBtn" align="center" class ="Btn">通过微博加入我们!!</div></a>
+
                         </div>
                 </div>
             </div>

@@ -110,18 +110,18 @@
         <div class="container_16">
             <div id="leftside" class="grid_3">
                     <ul id="leftsideNav">
-                        <li><a id="userInfo"><strong>User Profile</strong></a></li>
+                        <li><a id="userInfo"><strong>用户概况</strong></a></li>
                         
-                        <li><a id="Account">Account</a></li>
-                        <li><a id="MyOrders">My Orders</a></li>
-                        <li><a id="Settings">Settings</a></li>
+                        <li><a id="Account">账号信息</a></li>
+                        <li><a id="MyOrders">我的订单</a></li>
+                        <li><a id="Settings">密码重置</a></li>
                     </ul>
                 </div>
             <div class="grid_13 push_3" id="whiteBox">
                 <div  class="grid_13">
                     <h1  style ="text-align: center; padding: 10px 0px 0px 0px;">Hello <%= printName %></h1>  
                     <p  style ="text-align: center;"> 
-                       Enter in the personal information for your Account to have quick checkouts during any transaction 
+                       为了能够让我们为您提供更为便捷和周到的服务，请在此耐心的完善您的个人信息。
                     </p>
                 </div>
             </div>
@@ -135,20 +135,20 @@
                     
                         <div id="CartTable" style="padding:10px 00px" class="grid_12">
                                     <div class="grid_1">
-                                         <h3>Order No</h3>
+                                         <h3>订单编号</h3>
                                     </div> 
                                     <div class="grid_7">
-                                        <h3 class="push_3">Order Summary</h3> 
+                                        <h3 class="push_3">订单总况</h3>
                                             <div class="clear"></div>
                                             <div class="grid_4">
-                                                Item 
+                                                项目
                                             </div>
                                             <div class="grid_2">
-                                                Price x Quantity
+                                                单价 x 数量
                                             </div>
                                     </div>
                                     <div class="grid_3 push_1">
-                                        <h3>Date</h3>
+                                        <h3>日期</h3>
                                     </div>
                             
                                     <div class="clear"></div>
@@ -252,45 +252,7 @@ WHERE o.`user_id` =4
                                     %>
                                     
                                     
-                                    <!-- Type I Order -->
-                                  <!--   <div class="grid_12"  style="border-top: 2px #444 solid;">
-                                        <div  class="grid_1">
-                                             124
-                                        </div>  
-                                        <div class="grid_7">
-                                                <div class="grid_4 ">
-                                                    Assassins Creed II 
-                                                </div>
-                                                <div class="grid_2">
-                                                    Rs. 98205689 x5
-                                                </div>
-                                        </div>
-                                        <div class="grid_3">
-                                            12-15-2003 : 15:06
-                                        </div>
-                                    </div>
-                                    <div class="clear"></div>
-                                    -->
-                                    
-                                    <!-- Type II Order -->
-                                  <!--   <div class="grid_12">
-                                        <div class="push_1">
-                                            <div class="grid_7">
-                                                    <div class="grid_4 ">
-                                                        Assassins Creed II 
-                                                    </div>
-                                                    <div class="grid_2">
-                                                        Rs. 999 x1
-                                                    </div>
-                                            </div>
-                                            <div class="grid_3">
-                                                12-15-2003 : 15:06
-                                            </div>
-                                        </div>
-                                    </div>
-                                     -->
-                                    
-                                    
+
                         </div>
                  </div>
                  <div class="clear"></div>
@@ -302,14 +264,14 @@ WHERE o.`user_id` =4
                                 %>
                         <form method="post" action="addUserDetalsServlet">
                             <div class="grid_3">
-                                Name
+                                用户名
                             </div>
                             <div class="grid_5">
                                 <input type="text" name="username" required/>
                             </div>
                             <div class="clear"></div><br/>
                             <div class="grid_3">
-                                Gender
+                                性别
                             </div>
                             <div class="grid_5">
                                 <select name="gender" required>
@@ -319,21 +281,21 @@ WHERE o.`user_id` =4
                             </div>
                             <div class="clear"></div><br/>
                             <div class="grid_3">
-                                Mobile No
+                                手机号码
                             </div>
                             <div class="grid_5">
                                 <input type="text" name="mobileNum" maxlength="10" required/>
                             </div>
                             <div class="clear"></div><br/>
                             <div class="grid_3">
-                                Address
+                               地址
                             </div>
                             <div class="grid_5">
                                 <textarea name="address" required></textarea>
                             </div>
                             <div class="clear"></div><br/>
                             <div class="grid_3">
-                                City
+                                城市
                             </div>
                             <div class="grid_5">
                                 <input type="text" value="Mumbai" disabled/><br/> We Do not accept any orders outside Mumbai <br/><br/>
@@ -346,14 +308,14 @@ WHERE o.`user_id` =4
                                        %>
                       <form method="post" action="addUserDetalsServlet">
                             <div class="grid_3">
-                                Name
+                                用户名
                             </div>
                             <div class="grid_5">
                                 <input type="text" name="username" value="<%= User.getUsername()%>" required/>
                             </div>
                             <div class="clear"></div><br/>
                             <div class="grid_3">
-                                Gender
+                                性别
                             </div>
                             <div class="grid_5">
                                 <select name="gender" required>
@@ -374,21 +336,21 @@ WHERE o.`user_id` =4
                             </div>
                             <div class="clear"></div><br/>
                             <div class="grid_3">
-                                Mobile No
+                                手机号码
                             </div>
                             <div class="grid_5">
                                 <input type="text" name="mobileNum"  value="<%= User.getMobileNum()%>" required/>
                             </div>
                             <div class="clear"></div><br/>
                             <div class="grid_3">
-                                Address
+                                地址
                             </div>
                             <div class="grid_5">
                                 <textarea name="address" required><%= User.getAddress()%></textarea>
                             </div>
                             <div class="clear"></div><br/>
                             <div class="grid_3">
-                                City
+                                城市
                             </div>
                             <div class="grid_5">
                                 <input type="text" value="Mumbai" disabled/><br/> We Do not accept any orders outside Mumbai <br/><br/>

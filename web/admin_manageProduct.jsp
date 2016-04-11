@@ -58,7 +58,7 @@
             <div class="grid_16" style="padding: 10px;" id="whiteBox">
 
                 <br/>
-                <h1 class="grid_15">Manage Product Information</h1><hr/>
+                <h1 class="grid_15">管理产品信息</h1><hr/>
 
             </div>
             <jsp:include page="includesPage/hesders_sidebars/admin_menuSideBar.jsp"></jsp:include>
@@ -98,7 +98,7 @@
                     <div class="ProductHeading">
                         <div class="grid_12">
                             <h1 class="grid_8">
-                                    Choose a Product to <span class="blue">Edit</span>
+                                   选择产品去 <span class="blue">编辑</span>
                                 </h1>
                             
                             <script type="text/javascript">
@@ -122,12 +122,12 @@
                             </script>
                             <div class="grid_2">
                                 <select id="sortBy" style="margin:  -2px;">
-                                    <option value="qa">Sort By Quantity Low to High</option>
-                                    <option  value="qd">Sort By Quantity High to Low</option>
-                                    <option value="pa">Sort By Price Low to High</option>
-                                    <option  value="pd">Sort By Price High to Low</option>
-                                    <option  value="ha">Sort By Hits Low to High</option>
-                                    <option  value="hd">Sort By Hits High to Low</option>
+                                    <option value="qa">（数量）由低到高排序</option>
+                                    <option  value="qd">（数量）由高到低排序</option>
+                                    <option value="pa">（价格）由低到高排序</option>
+                                    <option  value="pd">（价格）由高到低排序</option>
+                                    <option  value="ha">（点击量）由低到高排序</option>
+                                    <option  value="hd">（点击量）由低到高排序</option>
                                 </select>
                             </div>
                         </div>
@@ -251,7 +251,7 @@
                     <h3 style="padding: 10px; "><%=category%> > <%=subCategory%></h3>
                 </div>
                 <div class="grid_5">
-                    <a href="admin_deleteProduct.jsp?pid=<%= productId%>" id="greenBtn">[x] Delete this Item</a>
+                    <a href="admin_deleteProduct.jsp?pid=<%= productId%>" id="greenBtn">[x] 删除此项</a>
                 </div><!--
                 <div class="grid_5">
                     <h3  style="padding: 10px; float: right;" class="red">Selling Meter : 956</h3>
@@ -260,21 +260,21 @@
 
                 <div class="grid_13"  style="padding: 10px; ">
                     <div class="grid_2">
-                        Search Tags
+                       搜索标签
                     </div>
                     <div class="grid_5">
                         <textarea name="tags"><%=searchTags%></textarea>
                     </div>
                     <div class="clear"></div><br/>
                     <div class="grid_2">
-                        Product Name
+                        产品名称
                     </div>
                     <div class="grid_5">
                         <input type="text" name="productName" value="<%=productName%>"/>
                     </div>
                     <div class="clear"></div><br/>
                     <div class="grid_2">
-                        Product Quantity in Stock<%
+                        产品库存<%
                         session.setAttribute("quantity", quantity);
                         %>
                     </div>
@@ -283,21 +283,21 @@
                     </div>
                     <div class="clear"></div>
                     <div class="grid_2">
-                        Add Product Quantity
+                        增加产品
                     </div>
                     <div class="grid_5">
                         <input type="text" name="addQuantity" value="0" style="width: 75px;"/>
                     </div>
                     <div class="clear"></div><br/>
                     <div class="grid_2">
-                        Product Price: Rs.
+                        产品价格: Rs.
                     </div>
                     <div class="grid_5">
                         <input type="text" name="productPrice" value="<%=price%>">
                     </div>
                     <div class="clear"></div><br/>
                     <div class="grid_2">
-                        Description / Summary
+                        产品描述 / 汇总
                     </div>
                     <div class="grid_5">
                         <textarea name="summary" cols="50" rows="20"><%= summary%></textarea>
@@ -305,7 +305,7 @@
                 </div>
 
                 <div class="grid_5">
-                    <input type="submit" id="greenBtn" value="Save Changes" />
+                    <input type="submit" id="greenBtn" value="保存更改" />
                 </div>
             </form>
         </div>
@@ -336,9 +336,9 @@
         </script>
         <div class="grid_16" id="whiteBox">
             <br/>
-            <h1 class="grid_7">Product Image Gallery <span class="red">Click to delete</span></h1>
+            <h1 class="grid_7">Product Image Gallery <span class="red">点击删除</span></h1>
             <div class="grid_5">
-                <a href="productInsertImages.jsp?pid=<%= productId%>" id="greenBtn"> [+] Start Adding Images for this Item</a>
+                <a href="productInsertImages.jsp?pid=<%= productId%>" id="greenBtn"> [+] 为该条项目增加图片</a>
             </div><div class="clear"></div><br/>
             <hr/>
 

@@ -128,7 +128,7 @@ public class admin_login extends HttpServlet {
                         User.setUserEmail(email);
                         userSession.setAttribute("user", User);
                         userSession.setAttribute("admin", Administrator);
-                        response.sendRedirect(request.getContextPath());
+                        response.sendRedirect("/admin_Performance.jsp");
                       }
                     else {
                         isLoggedIn = false;

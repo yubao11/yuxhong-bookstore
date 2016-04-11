@@ -3,7 +3,7 @@
     Created on : Nov 24, 2012, 2:07:38 PM
     Author     : jDeveloper
 --%>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
@@ -52,7 +52,7 @@
 
             <div class="grid_16" style="padding: 10px;" id="whiteBox">
                 <br/>
-                <h1 class="grid_15">Pending Orders</h1><hr/>
+                <h1 class="grid_15">待处理订单</h1><hr/>
             </div>
                 <div class="clear"></div>
                 <jsp:include page="includesPage/hesders_sidebars/admin_menuSideBar.jsp"></jsp:include>
@@ -70,10 +70,10 @@
                         
                         <div class="clear"></div>
                         <div class="grid_10">
-                            <input id="greenBtn" type="submit" value="Change Product Status">
+                            <input id="greenBtn" type="submit" value="修改产品状态">
                             <select name="ChangeStatus">
-                                <option value="approved">I Approve these checked orders</option>
-                                <option value="cancel">Cancel checked orders</option>
+                                <option value="approved">通过选中的订单</option>
+                                <option value="cancel">取消选中的订单</option>
                             </select>
                         </div>
                         <div class="clear"></div>
@@ -82,23 +82,23 @@
                             <h3>Order No</h3>
                         </div>
                         <div class="grid_7">
-                            <h3 class="push_3">Order Summary</h3> 
+                            <h3 class="push_3">订单汇总</h3>
                             <div class="clear"></div>
                             <div class="grid_4">
-                                Item 
+                                项目
                             </div>
                             <div class="grid_2">
-                                Price x Quantity
+                                单价 x 数量
                             </div>
                         </div>
                         <div class="grid_2">
-                            <h3 style ="text-align: center;">Date</h3>
+                            <h3 style ="text-align: center;">日期</h3>
                         </div>   
                         <div class="grid_2">
-                            <h3 style ="text-align: center;">Mobile No</h3>
+                            <h3 style ="text-align: center;">联系方式</h3>
                         </div>
                         <div class="grid_3">
-                            <h3 >Address</h3>
+                            <h3 >地址</h3>
                         </div>       
                         <div class="clear"></div>
 

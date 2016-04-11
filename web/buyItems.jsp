@@ -3,7 +3,7 @@
     Created on : 5 Nov, 2012, 12:23:58 PM
     Author     : chirag
 --%>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="user.user"%>
 <!DOCTYPE html>
 <html>

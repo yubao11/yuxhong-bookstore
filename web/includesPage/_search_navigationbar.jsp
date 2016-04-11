@@ -30,7 +30,7 @@
             -->
             </div>
             <div class="grid_6" id="top">
-                <a href="http://www.facebook.com"> <div id="greenBtn" align="center" class ="Btn">通过facebook加入我们!!</div></a>
+                <a href="http://weibo.com"> <div id="greenBtn" align="center" class ="Btn">通过微博加入我们!!</div></a>
             </div>
         </div>
     </div>

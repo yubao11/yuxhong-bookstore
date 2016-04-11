@@ -122,9 +122,9 @@
             <div class="grid_4">
                 <p><%=sub_category_name%></p>
                 <div class="grid_3" style="display: inline;">
-                    <h1 style="display: inline;"><%= qty %></h1> <a href="admin_manageProduct.jsp?pid=<%= product_id%>" id="greenBtn" style="display: inline;">Edit Product</a> 
+                    <h1 style="display: inline;"><%= qty %></h1> <a href="admin_manageProduct.jsp?pid=<%= product_id%>" id="greenBtn" style="display: inline;">编辑</a>
                 </div>
-                <p>Quantity</p>
+                <p>数量</p>
             </div>
         </div>
         <div class="clear"></div>

@@ -3,7 +3,7 @@
     Created on : 30 Nov, 2012, 11:35:07 PM
     Author     : chirag
 --%>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.SQLIntegrityConstraintViolationException"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>

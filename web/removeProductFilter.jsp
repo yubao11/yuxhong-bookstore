@@ -8,6 +8,7 @@
 <%
     if (request.getParameter("cat") != null ){
         session.removeAttribute("cat");
+        session.removeAttribute("scat");
     }
     if (request.getParameter("scat") != null ){
         session.removeAttribute("scat");
