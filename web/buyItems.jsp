@@ -66,36 +66,36 @@
         <div class="container_16">
             <div class="grid_16" id="whiteBox" style="padding: 10px;">
                 <div class="grid_8">
-                    <h1>Buy Items</h1> <br/>
+                    <h1>购买商品</h1> <br/>
                     <form method="post" action="buyItems">
                         <div class="grid_2">
-                            Name
+                            姓名
                         </div>
                         <div class="grid_5">
                             <input type="text" class="name"  name="name" required/>
                         </div>
                         <div class="clear"></div><br/>
                         <div class="grid_2">
-                            Mobile No
+                          联系方式
                         </div>
                         <div class="grid_5">
                             <input type="text" class="mobile" maxlength="10" name="mobile" />
                         </div>
                         <div class="grid_2">
-                            Address
+                            地址
                         </div>
                         <div class="grid_5">
                             <textarea class="address"  name="address" required></textarea>    
                         </div>
                         <div class="grid_2">
-                            City
+                            城市
                         </div>
                         <div class="grid_5">
-                            <input  type="text" value="Mumbai" disabled/> We Do not accept any orders outside Mumbai
+                            <input  type="text" value="杭州" disabled/> 我们不接受杭州以外的城市订单
                         </div>
                         <div class="clear"></div><br/>
                         <div class="grid_5" >
-                            <input  type="submit" id="greenBtn" value="Add Details"/>
+                            <input  type="submit" id="greenBtn" value="确定"/>
                         </div>
                     </form>
                 </div>
@@ -103,22 +103,22 @@
                if (User.getAddress() != null && User.getMobileNum() != null && User.getUserEmail() != null && User.getUsername() != null){
                    %>
                    <div class="grid_7 shippingAddress" id="useInfo">
-                    <h1> <strong></strong>This is my Shipping Address</h1> <br/>
+                    <h1> <strong></strong>这是我的送货地址</h1> <br/>
                         <div class="grid_1">
-                            Name
+                            姓名
                         </div>
                         <div class="grid_5">
                             <span id ="userName"><%= User.getUsername() %></span>
                         </div>
                         <div class="clear"></div>
                         <div class="grid_1">
-                            Mobile
+                            联系方式
                         </div>
                         <div class="grid_5">
                             <span id ="mobile"><%= User.getMobileNum() %></span>
                         </div>
                         <div class="grid_1">
-                            Address
+                            地址
                         </div>
                         <div class="grid_5">
                             <span id ="useAddress"><%= User.getAddress() %></span> 
@@ -145,7 +145,7 @@
                %>
                     <a href="userinfo.jsp">
                         <div class="grid_7 shippingAddress">
-                            <h1> <strong></strong>Add your Details for quick Checkout</h1>
+                            <h1> <strong></strong>添加您的详细信息，以便快速结账</h1>
                         </div>
                     </a>
                 <%

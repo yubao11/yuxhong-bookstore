@@ -72,7 +72,7 @@
         <div class="container_16">
             <div class="grid_16" id="whiteBox">
                 <div class="grid_8 push_3" >
-                    <h1 class="push_2" style="padding:10px 00px">Products In your Cart</h1>
+                    <h1 class="push_2" style="padding:10px 00px">购物车中的商品</h1>
 
                     <%
                         user User = new user();
@@ -81,13 +81,13 @@
                         User = (user) session.getAttribute("user");
                         if (session.getAttribute("user") == null) {
                     %>
-                    <h3 class="showForm" id="loginBtn" style="padding:10px 00px">Please Login before buying...</h3>
+                    <h3 class="showForm" id="loginBtn" style="padding:10px 00px">请在下单前先登录...</h3>
 
                     <%                } else {
                         //out.println("login by " + User.getUserEmail());
 
                     %>
-                    <h3 class="push_2" >Your Cart contains following...</h3>
+                    <h3 class="push_2" >您的购物车包含以下产品...</h3>
 
 
                     <%
@@ -107,13 +107,13 @@
 
                     <div id="CartTable" style="padding:10px 00px" class="grid_11">
                         <div class="grid_5">
-                            <h2>Name Of Product</h2> 
+                            <h2>商品名称</h2>
                         </div>
                         <div class="grid_2">
-                            <h2>Price</h2>
+                            <h2>单价</h2>
                         </div>
                         <div class="grid_2">
-                            <h2>Quantity</h2>
+                            <h2>数量</h2>
                         </div>
 
                         <%
@@ -142,7 +142,7 @@
                         <br/>
 
                         <div class="grid_5">
-                            <strong>Total Price of your Cart</strong>
+                            <strong>合计</strong>
                         </div>
 
                         <div class="grid_3 push_3">
@@ -154,12 +154,12 @@
                         <br/>
                         <a href="buyItems.jsp">
                             <div class="grid_3" id="greenBtn">
-                                Buy These Items
+                                结算
                             </div>
                         </a>
                         <a href="viewProducts_.jsp">
                             <div class="grid_3" id="greenBtn">
-                                Continue Shopping
+                              继续购买
                             </div>
                         </a>
                     </div>

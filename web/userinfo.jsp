@@ -131,7 +131,7 @@
                     
                  <div  style ="text-align: center; border-top: 20px #444 solid; padding: 10px 0px 10px 0px;" class="grid_12 MyOrders">
                         
-                     <h1 style ="padding: 10px 0px 10px 0px;">My Orders</h1>  
+                     <h1 style ="padding: 10px 0px 10px 0px;">我的订单</h1>
                     
                         <div id="CartTable" style="padding:10px 00px" class="grid_12">
                                     <div class="grid_1">
@@ -257,7 +257,7 @@ WHERE o.`user_id` =4
                  </div>
                  <div class="clear"></div>
                     <div  style ="text-align: center; border-top: 20px #444 solid; padding: 10px 0px 10px 0px;" class="grid_9 push_1 Account">
-                        <h1 style ="padding: 10px 0px 10px 0px;">User Account</h1>  
+                        <h1 style ="padding: 10px 0px 10px 0px;">用户账号</h1>
                     
                         <%
                             if (User.getUsername() == null) {
@@ -298,8 +298,8 @@ WHERE o.`user_id` =4
                                 城市
                             </div>
                             <div class="grid_5">
-                                <input type="text" value="Mumbai" disabled/><br/> We Do not accept any orders outside Mumbai <br/><br/>
-                                <input type="submit" id="greenBtn" value="Add Details"/>
+                                <input type="text" value="杭州" disabled/><br/> 我们不接受杭州以外的订单 <br/><br/>
+                                <input type="submit" id="greenBtn" value="确定"/>
                             </div>
                             <div class="clear"></div><br/>
                         </form>
@@ -353,8 +353,8 @@ WHERE o.`user_id` =4
                                 城市
                             </div>
                             <div class="grid_5">
-                                <input type="text" value="Mumbai" disabled/><br/> We Do not accept any orders outside Mumbai <br/><br/>
-                                <input type="submit" id="greenBtn" value="Change Account Info"/>
+                                <input type="text" value="杭州" disabled/><br/> 我们不接受杭州以外的订单 <br/><br/>
+                                <input type="submit" id="greenBtn" value="修改用户信息"/>
                             </div>
                             <div class="clear"></div><br/>
                         </form>
@@ -371,22 +371,22 @@ WHERE o.`user_id` =4
                  
                  <div  style ="text-align: center; border-top: 20px #444 solid; padding: 10px 0px 10px 0px;" class="grid_9 push_1 Settings">
                         
-                     <h1 style ="padding: 10px 0px 10px 0px;">Settings</h1>  
+                     <h1 style ="padding: 10px 0px 10px 0px;">重置</h1>
                     
                         <form method="post" action="changeMyPass">
                             <div class="grid_3">
-                                Email 
+                                邮箱
                             </div>
                             <div class="grid_5">
                                 <input type="text" name="email" value="<%= User.getUserEmail() %>" disabled/>
                             </div>
                             <div class="clear"></div><br/>
                             <div class="grid_3">
-                                Password
+                                密码
                             </div>
                             <div class="grid_5">
                                 <input type="password" name="pass" /><br/><br/> 
-                                <input id="greenBtn" type="submit" value="Change My Password"/>
+                                <input id="greenBtn" type="submit" value="修改我的账号密码"/>
                             </div>
                             <div class="clear"></div><br/>
                         </form>
