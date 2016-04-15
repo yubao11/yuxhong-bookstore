@@ -3,7 +3,7 @@
     Created on : 2 Dec, 2012, 12:01:13 AM
     Author     : chirag
 --%>
-
+<%@page language="java" contentType="text/html"    pageEncoding="UTF-8"%>
 <%@page import="java.util.Calendar"%>
 <%@page import="java.util.Date"%>
 <%@page import="java.util.ArrayList"%>
@@ -35,22 +35,22 @@
                 <br/>
                 <h1 class="grid_15">Google Visualization</h1><hr/>
                 <form>
-                     Select Month
+                     选择月份
                 <select name="month" class="graphLoad" id="month">
-                    <option value="12">December</option>
-                    <option value="11">November</option>
-                    <option value="10">October</option>
-                    <option value="9">September</option>
-                    <option value="8">August</option>
-                    <option value="7">July</option>
-                    <option value="6">June</option>
-                    <option value="5">May</option>
-                    <option value="4">April</option>
-                    <option value="3">March</option>
-                    <option value="2">February</option>
-                    <option value="1">January</option>
+                    <option value="12">12月</option>
+                    <option value="11">11月</option>
+                    <option value="10">10月</option>
+                    <option value="9">9月</option>
+                    <option value="8">8月</option>
+                    <option value="7">7月</option>
+                    <option value="6">6月</option>
+                    <option value="5">5月</option>
+                    <option value="4">4月</option>
+                    <option value="3">3月</option>
+                    <option value="2">2月</option>
+                    <option value="1">1月</option>
                 </select>
-                Select Year
+                选择年份
                 <select name="year" class="graphLoad" id="year">
                     <%
                         for (int i =12 ;i<35;i++){

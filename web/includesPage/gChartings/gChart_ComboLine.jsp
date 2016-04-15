@@ -3,6 +3,7 @@
     Created on : 2 Dec, 2012, 12:01:13 AM
     Author     : chirag
 --%>
+<%@page language="java" contentType="text/html"    pageEncoding="UTF-8"%>
 
 <%@page import="java.util.Calendar"%>
 <%@page import="java.util.Date"%>
@@ -24,25 +25,25 @@
         <div class="container_16">
             <div class="grid_16" style="padding: 10px;" id="whiteBox">
                 <br/>
-                <h1 class="grid_15" style="text-align: center;">Monthly Activity Graph - Expenses, Sales, Profits  </h1><hr/>
+                <h1 class="grid_15" style="text-align: center;">月度活动表 - 费用、销售、利润  </h1><hr/>
                 <div class="grid_10 push_3"><form>
-                     Select Month
+                     选择月份
                      
                 <select name="month" class="graphLoad" id="month">
-                    <option value="12">December</option>
-                    <option value="11">November</option>
-                    <option value="10">October</option>
-                    <option value="09">September</option>
-                    <option value="08">August</option>
-                    <option value="07">July</option>
-                    <option value="06">June</option>
-                    <option value="05">May</option>
-                    <option value="04">April</option>
-                    <option value="03">March</option>
-                    <option value="02">February</option>
-                    <option value="01">January</option>
+                    <option value="12">12月</option>
+                    <option value="11">11月r</option>
+                    <option value="10">10月</option>
+                    <option value="09">9月r</option>
+                    <option value="08">8月</option>
+                    <option value="07">7月</option>
+                    <option value="06">6月</option>
+                    <option value="05">5月</option>
+                    <option value="04">4月</option>
+                    <option value="03">3月</option>
+                    <option value="02">2月</option>
+                    <option value="01">1月</option>
                 </select>
-                Select Year
+                选择年份
                 <select name="year" class="graphLoad" id="year">
                     <%
                         for (int i =12 ;i<35;i++){

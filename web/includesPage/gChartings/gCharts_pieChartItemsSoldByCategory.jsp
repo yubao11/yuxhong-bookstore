@@ -3,7 +3,7 @@
     Created on : 2 Dec, 2012, 12:01:13 AM
     Author     : chirag
 --%>
-
+<%@page language="java" contentType="text/html"    pageEncoding="UTF-8"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
