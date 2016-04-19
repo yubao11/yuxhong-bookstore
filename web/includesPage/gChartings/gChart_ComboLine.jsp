@@ -3,7 +3,7 @@
     Created on : 2 Dec, 2012, 12:01:13 AM
     Author     : chirag
 --%>
-<%@page language="java" contentType="text/html"    pageEncoding="UTF-8"%>
+
 
 <%@page import="java.util.Calendar"%>
 <%@page import="java.util.Date"%>
@@ -12,8 +12,8 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="database.DB_Conn"%>
 <%@page import="java.sql.Connection"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
         <style type="text/css">
             #buy {
                 border-radius: 17px;
@@ -31,9 +31,9 @@
                      
                 <select name="month" class="graphLoad" id="month">
                     <option value="12">12月</option>
-                    <option value="11">11月r</option>
+                    <option value="11">11月</option>
                     <option value="10">10月</option>
-                    <option value="09">9月r</option>
+                    <option value="09">9月</option>
                     <option value="08">8月</option>
                     <option value="07">7月</option>
                     <option value="06">6月</option>
@@ -54,7 +54,7 @@
                     %>
                 </select><br/>
                 <div class="grid_7">
-                    <input class="grid_4" type="submit" id="buy" value="Refresh">
+                    <input class="grid_4" type="submit" id="buy" value="刷新">
                 </div>
                 </form></div>
                 <div class="clear"></div>
