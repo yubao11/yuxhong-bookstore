@@ -104,22 +104,23 @@
         <div class="container_16">
             <div class="grid_16" style="padding: 10px;" id="whiteBox">
                 <div class="grid_3">
-                    <br/><h1>Add Product</h1><hr/>
+                    <br/><h1>增加商品</h1><hr/>
                 </div>
                 <div>
 
                     <div class="grid_3">
-                        <br/><h1>Step 1. Enter Product Company</h1><hr/>
+                        <br/><h1>Step 1. 输入产品公司</h1><hr/>
                     </div>
                     <div class="grid_3">
-                        <br/><h1>Step 2. Enter Category</h1><hr/>
-                    </div>
-                    <div class="grid_3 highlight">
-                        <br/><h1>Step 3. Enter in Product Name, Tags</h1><hr/>
+                        <br/><h1>Step 2. 输入产品目录</h1><hr/>
                     </div>
                     <div class="grid_3">
-                        <br/><h1>Step 4. Enter in Pricing & Quantity and Description</h1><hr/>
+                        <br/><h1>Step 3. 输入产品名称，标签</h1><hr/>
                     </div>
+                    <div class="grid_3">
+                        <br/><h1>Step 4. 输入价格，库存和产品描述</h1><hr/>
+                    </div>
+
 
                 </div>
             </div>
@@ -180,7 +181,7 @@
          <div class="grid_13"  style="padding: 10px 0px;" id="whiteBox">
                 
                 <div class="grid_13">
-                    <br/><h1>Step 3. Enter in Product Name, Tags</h1><hr/>
+                    <br/><h1>Step 3. 输入产品名称，标签</h1><hr/>
                 </div>
 
                 <div class="clear"></div>
@@ -191,7 +192,7 @@
                     <input type="hidden" name="page" value="admin_addProduct_4.jsp"/>
 
                     <div class="grid_4">
-                        <h3>Enter Product Name </h3>
+                        <h3>输入产品名称</h3>
                     </div>
                     <div class="grid_5">
                         <input id="productName" type="text" name= "productName"  placeholder="Product Name" required/><br/>
@@ -199,7 +200,7 @@
                     </div>
                     <div class="clear"></div><br/>
                     <div class="grid_4">
-                        <h3>Enter Tags [?]</h3>
+                        <h3>输入标签 [?]</h3>
                     </div>
                     <div class="grid_5">
                         <textarea id="tags" name= "tags" placeholder="Write in tags here without commas" required></textarea>

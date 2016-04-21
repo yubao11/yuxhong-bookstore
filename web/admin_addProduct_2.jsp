@@ -117,22 +117,23 @@
         <div class="container_16">
             <div class="grid_16" style="padding: 10px;" id="whiteBox">
                 <div class="grid_3">
-                    <br/><h1>Add Product</h1><hr/>
+                    <br/><h1>增加商品 </h1><hr/>
                 </div>
                 <div>
 
                     <div class="grid_3">
-                        <br/><h1>Step 1. Enter Product Company</h1><hr/>
+                        <br/><h1>Step 1. 输入产品公司</h1><hr/>
                     </div>
-                    <div class="grid_3 highlight">
-                        <br/><h1>Step 2. Enter Category</h1><hr/>
+                    <div class="grid_3">
+                        <br/><h1>Step 2. 输入产品目录</h1><hr/>
                     </div>
-                <div class="grid_3">
-                        <br/><h1>Step 3. Enter in Product Name, Tags</h1><hr/>
+                    <div class="grid_3">
+                        <br/><h1>Step 3. 输入产品名称，标签</h1><hr/>
                     </div>
-                <div class="grid_3">
-                        <br/><h1>Step 4. Enter in Pricing & Quantity and Description</h1><hr/>
-                 </div>
+                    <div class="grid_3">
+                        <br/><h1>Step 4. 输入价格，库存和产品描述</h1><hr/>
+                    </div>
+
 
                 </div>
             </div>
@@ -167,7 +168,7 @@
 
             <div class="grid_13"  style="padding: 10px 0px;" id="whiteBox">
                 <div class="grid_13">
-                    <br/><h1>Step 2. Enter Category</h1><hr/>
+                    <br/><h1>Step 2. 输入产品目录</h1><hr/>
                 </div>
                 <div class="clear"></div>
                 <form method="post" action="admin_addProduct_controller.jsp">
@@ -178,7 +179,7 @@
                     </div>
                     <div class="grid_5">
                         <select id="selectMenuCategory" name="category">
-                            <option value="" selected="">Select Category</option>
+                            <option value="" selected="">选择产品目录</option>
                                         <% 
                                             ResultSet rs = st.executeQuery(sql_getCategory);
                                             while (rs.next()) {
@@ -200,7 +201,7 @@
                     </div>
                     <div class="clear"></div><br/>
                     <div class="grid_2">
-                        <h3>Add Sub-Category</h3>
+                        <h3>增加产品目录</h3>
                     </div>
                     <div class="grid_5">
                         <input id="categoryName" type="text" name= "categoryName" tabindex="1" placeholder="eg. Games, Movies, Books"/>
@@ -210,15 +211,15 @@
                     </div>
                     <div class="clear"></div><br/>
                     <div class="grid_7">
-                        <input id="addCategoryNameBtn" class="buy" type="button" value="Add Category"/>
+                        <input id="addCategoryNameBtn" class="buy" type="button" value="增加产品目录"/>
                     </div>
                     <div class="clear"></div>
                     <div class="grid_2">
-                        <h3>Select Category</h3>
+                        <h3>选择子目录</h3>
                     </div>
                     <div class="grid_5">
                         <select id="selectMenuSubCategory" name="subCategory">
-                            <option value="" selected="">Select Sub-Category</option>
+                            <option value="" selected="">选择子目录</option>
                                             <%
 
                                                 ResultSet subCategory = st.executeQuery(sql_getSubCategory);
@@ -244,7 +245,7 @@
                     </div>
                     <div class="clear"></div><br/>
                     <div class="grid_2">
-                        <h3>Add Sub-Category</h3>
+                        <h3>增加子目录</h3>
                     </div>
                     <div class="grid_5">
                         <input id="SubCategoryName"  type="text" name= "SubCategoryName" tabindex="1" placeholder="Action, Adventure, Drama, etc"/></div>
@@ -253,7 +254,7 @@
                     </div>
                     <div class="clear"></div><br/>
                     <div class="grid_7">
-                        <input id="addSubCategoryBtn" class="buy" type="button" value="Add Sub-Category"/>
+                        <input id="addSubCategoryBtn" class="buy" type="button" value="增加产品子目录"/>
                     </div>
                     <div class="grid_5">
                         <input id="buy" type="submit" value="Next >"/>

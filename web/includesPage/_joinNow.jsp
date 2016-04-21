@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
+   <%@ page contentType="text/html; charset=UTF-8" %>
 <script type ="text/javascript" src="js/headerJoinScript.js"></script>
 <div id = "topWrapper">
     <div class="container_16">
@@ -33,7 +33,7 @@
                                 <label>Email</label>
                             </td>
                             <td>
-                                <label><input type="email" name="email" placeholder="john_lee@xyz.com" required/><br/></label>
+                                <label><input type="email" name="email" placeholder="yubao@163.com" required/><br/></label>
                             </td>
                         </tr>
                         <tr>
@@ -71,7 +71,7 @@
                                 <label>Email</label>
                             </td>
                             <td>
-                                <label><input type="email" name="emailReg" placeholder="john_lee@xyz.com" required/><br/></label>
+                                <label><input type="email" name="emailReg" placeholder="yubao@163.com" required/><br/></label>
                             </td>
                         </tr>
                         <tr>

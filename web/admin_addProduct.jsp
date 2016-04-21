@@ -119,21 +119,21 @@
         <div class="container_16">
             <div class="grid_16" style="padding: 10px;" id="whiteBox">
                     <div class="grid_3">
-                        <br/><h1>Add Product</h1>
+                        <br/><h1>增加商品</h1>
                     </div>
                 <div>
                         
                 <div class="grid_3">
-                        <br/><h1>Step 1. Enter Product Company</h1><hr/>
+                        <br/><h1>Step 1. 输入产品公司</h1><hr/>
                     </div>
                 <div class="grid_3">
-                        <br/><h1>Step 2. Enter Category</h1><hr/>
+                        <br/><h1>Step 2. 输入产品目录</h1><hr/>
                     </div>
                 <div class="grid_3">
-                        <br/><h1>Step 3. Enter in Product Name, Tags</h1><hr/>
+                        <br/><h1>Step 3. 输入产品名称，标签</h1><hr/>
                     </div>
                 <div class="grid_3">
-                        <br/><h1>Step 4. Enter in Pricing & Quantity and Description</h1><hr/>
+                        <br/><h1>Step 4. 输入价格，库存和产品描述</h1><hr/>
                     </div>
                 
                     </div>
@@ -145,13 +145,13 @@
                 
                 <div class="grid_13"  style="padding: 10px 0px;" id="whiteBox">
                     <div class="grid_13">
-                        <br/><h1>4 Step Process for Adding Products...</h1><hr/>
+                        <br/><h1>4歩添加产品的过程</h1><hr/>
                     </div>
                     
                     <div class="grid_7">
                         <a style="
 border: 1px solid black;
-box-shadow: 0px 2px 10px #333;" href="admin_addProduct_1.jsp" class="grid_5 push_2" id="buy">Start Adding Products right Now...!</a>
+box-shadow: 0px 2px 10px #333;" href="admin_addProduct_1.jsp" class="grid_5 push_2" id="buy">现在开始添加产品...!</a>
                     </div>
                 </div>
                     

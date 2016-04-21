@@ -124,8 +124,8 @@
                     %>
                 <h1 class="grid_15">主页指示</h1><hr/>
                 <a href="admin_manageProduct.jsp" id="buy"  class="grid_3"><%= qty %> 项库存（增序）</a>
-                <a href="admin_approvedOrders.jsp" id="buy"  class="grid_3"><%= approvedOrders %> 项已发送</a>
-                <a href="admin_pendingOrders.jsp" id="buy" class="grid_3"><%= pendingOrders %>项已接收</a>
+                <a href="admin_approvedOrders.jsp" id="buy"  class="grid_3"><%= approvedOrders %> 项已处理</a>
+                <a href="admin_pendingOrders.jsp" id="buy" class="grid_3"><%= pendingOrders %>项待处理</a>
            </div>
                 <div class="clear"></div>
             <!--Loading the AJAX API-->
