@@ -99,7 +99,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response)
                         if (pass.equals(passAgain)) {
                             // then the user is registered and a session is 
 
-                            String sql = "INSERT INTO  `saikiran enterprises`.`administrators` "
+                            String sql = "INSERT INTO  `bs`.`administrators` "
                                     + "(`admin_id`  ,`email` ,`password` ) "
                                     + "VALUES (NULL ,  ?, SHA1(  ? )); ";
 

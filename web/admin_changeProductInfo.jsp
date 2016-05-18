@@ -77,7 +77,7 @@ UPDATE  `products` SET  `product-name` =  'XPS Seriator v2',
  `lastUpdated` = NOW( ) ,
  `summary` =  'qwert yuio p' WHERE  `products`.`product_id` =10
                         
-  INSERT INTO  `Yubao enterprises`.`expenses` (
+  INSERT INTO  `bs`.`expenses` (
  `expenses_id` ,
     `product_id` ,
     `product_name` ,
@@ -99,7 +99,7 @@ UPDATE  `products` SET  `product-name` =  'XPS Seriator v2',
                         +" `summary` =  '"+summary+"' WHERE  `products`.`product_id` ="+pid+" ";
                         double expenses_d = productPrice * addQuantity;
                         int expenses = (int)expenses_d;
-                        String sqlUpdateExpenses = "INSERT INTO  `Yubao enterprises`.`expenses` ("
+                        String sqlUpdateExpenses = "INSERT INTO  `bs`.`expenses` ("
 +"  `expenses_id` , "
  +"   `product_id` ,"
  +"   `product_name` , "

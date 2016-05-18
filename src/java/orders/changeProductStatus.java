@@ -124,7 +124,7 @@ public class changeProductStatus extends HttpServlet {
                 }
                 
                 
-                response.sendRedirect(request.getContextPath()+"/admin_pendingOrders.jsp");
+                response.sendRedirect("/admin_pendingOrders.jsp");
                 
             }else if (ChangeStatus.equals("delivered")){
                 //cancel the pending oreders
@@ -158,7 +158,7 @@ public class changeProductStatus extends HttpServlet {
                     Logger.getLogger(changeProductStatus.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 
-                response.sendRedirect("/saikiranBookstoreApp/admin_approvedOrders.jsp");
+                response.sendRedirect("/admin_approvedOrders.jsp");
             }
             else if (ChangeStatus.equals("cancel")){
                 //cancel the pending oreders
@@ -196,7 +196,7 @@ public class changeProductStatus extends HttpServlet {
                     Logger.getLogger(changeProductStatus.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 
-                response.sendRedirect("/saikiranBookstoreApp/admin_Performance.jsp");
+                response.sendRedirect("/admin_Performance.jsp");
             
             }
        }

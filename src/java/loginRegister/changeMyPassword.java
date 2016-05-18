@@ -88,7 +88,7 @@ public class changeMyPassword extends HttpServlet {
             String email = request.getParameter("email");
             String pass = request.getParameter("pass");
             
-            String changePassword = "UPDATE  `saikiran enterprises`.`user` SET  `pass` = SHA1(  ? ) WHERE  `user`.`email` =?;";
+            String changePassword = "UPDATE  `bs`.`user` SET  `pass` = SHA1(  ? ) WHERE  `user`.`email` =?;";
             
             DB_Conn con = new DB_Conn();
             Connection c  = con.getConnection();

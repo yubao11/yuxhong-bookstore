@@ -117,7 +117,7 @@ public class addUserDetalsServlet extends HttpServlet {
                             if (address.trim().length() >5){
                                     if (addressSess == null) {
                                             //No INSERTION EARLIER FRESH Det.
-                                            String insertDetails = "INSERT INTO  `saikiran enterprises`.`user-details` ("
+                                            String insertDetails = "INSERT INTO  `bs`.`user-details` ("
                                                     + "`userDetail_Id` ,"
                                                     + "`user_id` ,"
                                                     + "`username` ,"

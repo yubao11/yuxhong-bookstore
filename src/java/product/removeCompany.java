@@ -118,7 +118,6 @@ public class removeCompany extends HttpServlet {
             for (int i =0; i<company.size(); i++){
                 company.get(i);
                 out.println ("<br/><br/> "+company.get(i));
-                /*DELETE FROM  `product-company` WHERE  `company-id` =  '100'*/
                 String sqlCompany = " DELETE FROM `product-company` WHERE `company-id` = '"+company.get(i)+"' ";
                 st.addBatch(sqlCompany);
             }

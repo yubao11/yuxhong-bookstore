@@ -99,9 +99,9 @@ public class addCategory extends HttpServlet {
                 Connection con;
                 DB_Conn conn = new DB_Conn();
                 con = conn.getConnection();
-                String sqlInsertCompany ="INSERT INTO  `saikiran enterprises`.`category` (`category_id` ,`category_name`)VALUES (NULL ,  '"+categoryName+"');"; 
-               // "INSERT INTO  `saikiran enterprises`.`product-company` (`company-id` ,`company-name`)VALUES (NULL ,  '"+companyName+"');";                
-                //String sqlInsertProduct = "INSERT INTO  `saikiran enterprises`.`category` (`category_id` ,`category_name`)VALUES (NULL ,  '"+companyName+"'); ";
+                String sqlInsertCompany ="INSERT INTO  `bs`.`category` (`category_id` ,`category_name`)VALUES (NULL ,  '"+categoryName+"');";
+               // "INSERT INTO  `bs`.`product-company` (`company-id` ,`company-name`)VALUES (NULL ,  '"+companyName+"');";
+                //String sqlInsertProduct = "INSERT INTO  `bs`.`category` (`category_id` ,`category_name`)VALUES (NULL ,  '"+companyName+"'); ";
                 Statement st = con.createStatement();
                 int rows = st.executeUpdate(sqlInsertCompany);
                 

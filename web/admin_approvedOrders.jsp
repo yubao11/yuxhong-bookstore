@@ -49,7 +49,7 @@
             <div class="grid_16" style="padding: 10px;" id="whiteBox">
                     
                 <br/>
-                <h1 class="grid_15">已接收订单</h1><hr/>
+                <h1 class="grid_15">已处理订单</h1><hr/>
                     
             </div>
                 <div class="clear"></div>

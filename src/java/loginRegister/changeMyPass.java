@@ -93,7 +93,7 @@ public class changeMyPass extends HttpServlet {
             }
             String changePassword = 
                     "UPDATE  "
-                    + "`saikiran enterprises`.`user` "
+                    + "`bs`.`user` "
                     + " SET  `pass` = SHA1( '"+pass+"' ) "
                     + "WHERE  `user`.`email` ='"+email+"';";
             

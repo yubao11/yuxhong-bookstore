@@ -28,9 +28,7 @@
 
         <%
             if ((session.getAttribute("productName") == null)) {
-                // if email session is set, Dont show the message redirect to index
-                //response.sendRedirect("/YubaoBookstoreApp/productInsertImages_2.jsp");
-                //out.println("There are No product selected to insert an image for them...");
+
             }
         %>z
 
@@ -46,7 +44,6 @@
                     Hashtable files = mrequest.getFiles();
                     if ((files != null) && (!files.isEmpty())) {
                         UploadFile file = (UploadFile) files.get("uploadfile");
-
                         String fileName, fileType;
                         String result;
                         long fileSize;
@@ -65,7 +62,7 @@
                                     result = "File Uploaded with no errors...";
                                     DB_Conn conn = new DB_Conn();
                                     Connection con = conn.getConnection();
-                                    String insertImage = "INSERT INTO  `Yubao enterprises`.`images` "
+                                    String insertImage = "INSERT INTO  `bs`.`images` "
                                             + "(`image-id` ,`image-name` ,`product-name`) "
                                             + "VALUES (NULL ,  "
                                             + "'uploads/" + file.getFileName() + "',  '" + (String)session.getAttribute("productName") + "');";
